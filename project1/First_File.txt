@@ -1,0 +1,5 @@
+I have some Data here for the project 1.
+
+1. Learning new technologies.
+2. Implement the leanings.
+3. Good to go.
