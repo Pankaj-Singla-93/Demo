@@ -14,12 +14,12 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ dev , tst ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ dev ]
-  schedule:
-    - cron: '33 21 * * 0'
+    branches: [ dev , tst]
+  #schedule:
+    #- cron: '33 21 * * 0'
 
 jobs:
   analyze:
@@ -29,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [  ]
+        language: [ 'python' ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
